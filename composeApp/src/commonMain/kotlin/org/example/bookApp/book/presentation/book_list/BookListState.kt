@@ -13,18 +13,3 @@ data class BookListState(
 )
 
 
- val books = (1..100).map {
-    Book(
-        id = it.toString(),
-        title = "Book $it",
-        imageUrl = "https://test.com",
-        authors = listOf("uday"),
-        description = "Desc $it",
-        languages = emptyList(),
-        firstPublishYear = null,
-        averageRating = 4.87,
-        ratingsCount = 5,
-        numPages = 100,
-        numEditions = 3
-    )
-}

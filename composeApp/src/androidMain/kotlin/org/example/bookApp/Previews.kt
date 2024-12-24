@@ -10,7 +10,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import org.example.bookApp.book.domain.Book
 import org.example.bookApp.book.presentation.book_list.BooListScreen
 import org.example.bookApp.book.presentation.book_list.BookListState
-import org.example.bookApp.book.presentation.book_list.books
 import org.example.bookApp.book.presentation.book_list.components.BookSearchBar
 
 
@@ -31,6 +30,23 @@ private fun BookSearchBarPreview() {
         )
     }
 
+}
+
+
+val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "https://test.com",
+        authors = listOf("uday"),
+        description = "Desc $it",
+        languages = emptyList(),
+        firstPublishYear = null,
+        averageRating = 4.87,
+        ratingsCount = 5,
+        numPages = 100,
+        numEditions = 3
+    )
 }
 
 
